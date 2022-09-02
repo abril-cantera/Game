@@ -18,6 +18,7 @@ canvas {
   border-radius: 8px;
   background-color: #feff9d;
 }
+
 .btns {
   display: flex;
   justify-content: center;
@@ -39,17 +40,21 @@ button:not(:last-child) {
 }
 .messages {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   width: 80%;
-  max-width: 460px;
+  text-align: center;
 }
 p {
   display: block;
   margin: 0;
   width: 100%;
 }
-@media (max-width: 440px) {
+@media (min-width: 320px) {
+  .messages {
+    margin: 0 5px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
   button {
     margin-top: 5px;
   }
@@ -57,5 +62,10 @@ p {
   #down {
     margin-left: 100%;
     margin-right: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container-btn-messages {
+    display: flex;
   }
 }

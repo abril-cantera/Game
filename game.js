@@ -46,9 +46,9 @@ function fixNumber(n) {
 function setCanvasSize() {
   //el ciclo if-else, calcula el tamaño de pantalla que debe usar
   if (window.innerHeight > window.innerWidth) {
-    canvasSize = window.innerWidth * 0.7;
+    canvasSize = window.innerWidth * 0.85;
   } else {
-    canvasSize = window.innerHeight * 0.7;
+    canvasSize = window.innerHeight * 0.85;
   }
 
   /* canvasSize = Number(canvasSize.toFixed(0)); */
@@ -57,7 +57,7 @@ function setCanvasSize() {
   canvas.setAttribute("width", canvasSize);
   canvas.setAttribute("height", canvasSize);
 
-  elementsSize = canvasSize / 10;
+  elementsSize = canvasSize / 15;
 
   playerPosition.x = undefined;
   playerPosition.y = undefined;
