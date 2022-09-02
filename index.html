@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Platzriv - Jueguito online de carreras y calaveras</title>
+    <title>🎮</title>
   </head>
   <body>
-    <div class="game-container">
-      <canvas id="game"></canvas>
-      <div class="container-btn-messages">
+    <section class="game-container">
+      <section class="container-canvas">
+        <canvas id="game"></canvas>
+      </section>
+      <section class="container-btn-messages">
         <div class="btns">
           <button id="up">Arriba</button>
-          <button id="left">Izquierda</button>
-          <button id="right">Derecha</button>
+          <section>
+            <button id="left">Izquierda</button>
+            <button id="right">Derecha</button>
+          </section>
           <button id="down">Abajo</button>
         </div>
 
@@ -24,8 +28,9 @@
           <p>Record: 🏁<span id="record"></span></p>
           <p id="result"></p>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
+
     <script src="./maps.js"></script>
     <script src="./game.js"></script>
   </body>
